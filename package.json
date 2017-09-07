@@ -1,0 +1,24 @@
+{
+  "name": "pawsquad-task",
+  "version": "1.0.0",
+  "description": "Task for front end development role.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/James-Bovis/PawSquad-Task.git"
+  },
+  "author": "James Bovis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/James-Bovis/PawSquad-Task/issues"
+  },
+  "homepage": "https://github.com/James-Bovis/PawSquad-Task#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
