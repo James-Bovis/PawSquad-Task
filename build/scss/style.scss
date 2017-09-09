@@ -4,12 +4,13 @@ body {
   margin: 0px;
 }
 
-// Import base components
-@import 'base/typeography';
-@import 'base/helper';
-@import 'base/animation';
-
 // Import layout styles
 @import 'layout/sections';
 
 @import 'components/components';
+
+// Import base components
+@import 'base/typeography';
+@import 'base/helper';
+@import 'base/animation';
+@import 'base/responsive';
