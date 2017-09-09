@@ -12,6 +12,12 @@ var imagemin = require('gulp-imagemin');
 // Require gulp-cache
 var cache = require('gulp-cache');
 
+// Require del for cleaning
+var del = require('del');
+
+// Require run-sequence
+var runSequence = require('run-sequence');
+
 // Compiles the sass code into css
 gulp.task('sass', function(){
   return gulp.src('build/scss/style.scss')
@@ -65,4 +71,16 @@ gulp.task('copy-index', function() {
 gulp.task('copy-audio', function() {
   return gulp.src('build/audio/**/*')
   .pipe(gulp.dest('dist/audio/'))
+})
+
+// Delete "dist" folder
+gulp.task('clean:dist', function() {
+  return del.sync('dist');
+})
+
+gulp.task('build', function (callback) {
+  runSequence('clean:dist',
+    ['copy-index', 'copy-css', 'copy-audio', 'images'],
+    callback
+  )
 })
