@@ -1,0 +1,11 @@
+body {
+  background-color: #222222;
+  color: white;
+  margin: 0px;
+}
+
+// Import base components
+@import 'base/typeography';
+
+// Import layout styles
+@import 'layout/sections';
