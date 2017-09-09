@@ -59,3 +59,45 @@ transform: translateX(-50%)
     }
   }
 }
+
+.quotes {
+  margin: auto;
+  padding: 2rem;
+
+  .quote {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    &.left {
+      img {
+        margin-right: 2em;
+      }
+      .quote-text p {
+        text-align: left;
+        font-style: italic;
+        font-weight: 300;
+
+         span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    &.right {
+      img {
+        margin-left: 2em;
+      }
+      .quote-text p {
+        text-align: right;
+        font-style: italic;
+        font-weight: 300;
+
+         span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
