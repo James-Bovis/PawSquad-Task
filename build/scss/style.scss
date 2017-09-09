@@ -6,6 +6,8 @@ body {
 
 // Import base components
 @import 'base/typeography';
+@import 'base/helper';
+@import 'base/animation';
 
 // Import layout styles
 @import 'layout/sections';
