@@ -46,5 +46,23 @@ gulp.task('images', function(){
   .pipe(cache(imagemin({
       interlaced: true
     })))
-  .pipe(gulp.dest('dist/images'))
+  .pipe(gulp.dest('dist/img'))
 });
+
+// Copy css to "dist"
+gulp.task('copy-css', function() {
+  return gulp.src('build/css/**/*')
+  .pipe(gulp.dest('dist/css/'))
+})
+
+// Copy "index.html" to "dist"
+gulp.task('copy-index', function() {
+  return gulp.src('build/index.html')
+  .pipe(gulp.dest('dist/'))
+})
+
+// Copy audio to "dist"
+gulp.task('copy-audio', function() {
+  return gulp.src('build/audio/**/*')
+  .pipe(gulp.dest('dist/audio/'))
+})
