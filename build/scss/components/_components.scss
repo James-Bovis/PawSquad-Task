@@ -24,14 +24,13 @@ transform: translateX(-50%)
     bottom: 0px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     transform: translateX(-50%);
     }
 }
 
 .single {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 2em 0em;
 
@@ -45,7 +44,7 @@ transform: translateX(-50%)
     top: 0; left: 0; bottom: 0; right: 0;
 
   }
-  
+
   .buy-links {
     margin-left: 2em;
     display: inline-block;
