@@ -49,9 +49,10 @@
             </ul>
           </div>
 
-          <audio class="audio">
-            <source src="audio\J Dilla-Last-Donut-of-the-Night.mp3"  type="mp3">
+          <audio class="song">
+            <source src="audio/last-donut.mp3" preload="auto" >
           </audio>
+
 
         </div>
 
@@ -68,10 +69,26 @@
 
     </div>
 
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 
+    <script>
+    $('.play-button').click(function(){
+      // Toggles spin animation on click
+      $('.record').toggleClass("spin");
 
+      // Controls the play/pause of the song
+      var audio = $(".song")[0];
+      if (audio.paused) {
+          audio.play();
 
+      }  else {
+          audio.pause();
+      }
+
+    });
+    </script>
 
   </body>
 </html>
