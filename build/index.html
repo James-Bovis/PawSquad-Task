@@ -7,37 +7,39 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Import Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <title>J Dilla</title>
   </head>
   <body>
     <div class="intro-section">
       <div class="container">
-        <div class="header">
+        <div class="header animated fadeIn">
           <h1>J Dilla</h1>
           <p>James Dewitt Yancey <br>(February 7, 1974 — February 10, 2006)</p>
         </div>
 
-        <div class="quote">
-          <h1>“If you were to secretly ask the most praised hip-hop producers, if given a top three, who they fear the most, Dilla’s name would chart on everyone’s list, hands down.”</h1>
+        <div class="animated fadeInDown">
+          <h1>"If you were to secretly ask the most praised hip-hop producers, if given a top three, who they fear the most, Dilla’s name would chart on everyone’s list, hands down."</h1>
           <p>Questlove, drummer from The Roots</p>
         </div>
 
         <div class="read-more">
-          <p>Read more</p>
+          <p class="animated fadeIn ">Scroll down for more</p>
         </div>
       </div>
     </div>
 
     <div class="about-section">
       <div class="container">
-        <img src="img/dilla.jpg" class="img-circle" alt="">
-        <p>"James Dewitt Yancey, better known by the stage names J Dilla and Jay Dee, was an American record producer who emerged from the mid-1990s underground hip-hop scene in Detroit, Michigan. According to his obituary at NPR.org, he "was one of the music industry's most influential hip-hop artists, working for big-name acts including A Tribe Called Quest, De La Soul, Busta Rhymes, The Pharcyde and Common." Yancey died in 2006 of the blood disease Thrombotic thrombocytopenic purpura."</p>
+          <img src="img/dilla.jpg" class="img-circle wow animated fadeInUp" data-wow-delay="0.5s" alt="">
+          <p class="wow animated fadeIn" data-wow-delay="1s">"James Dewitt Yancey, better known by the stage names J Dilla and Jay Dee, was an American record producer who emerged from the mid-1990s underground hip-hop scene in Detroit, Michigan. According to his obituary at NPR.org, he "was one of the music industry's most influential hip-hop artists, working for big-name acts including A Tribe Called Quest, De La Soul, Busta Rhymes, The Pharcyde and Common." Yancey died in 2006 of the blood disease Thrombotic thrombocytopenic purpura."</p>
 
-        <div class="single">
+
+        <div class="single wow animated fadeInUp" data-wow-delay="1.5s">
           <div class="artwork">
             <img src="img/artwork.jpg" class="cover img-circle" alt="">
             <img src="img/record.png" class="record" alt="">
-            <img src="img/play.svg" width="50px;" class="play-button" alt="">
+            <img src="img/play.svg" width="50px;" class="play-button hvr-grow" alt="">
           </div>
 
           <div class="buy-links">
@@ -45,37 +47,35 @@
             <ul>
               <li>
                 <a href="https://www.spotify.com/us/" target="_blank">
-                  <img src="img/spotify.png" alt="">
+                  <img src="img/spotify.png" class="hvr-grow" alt="">
                 </a>
               </li>
               <li>
                 <a href="https://www.apple.com/uk/music/" target="_blank">
-                <img src="img/itunes.png" alt="">
+                <img src="img/itunes.png" class="hvr-grow" alt="">
                 </a>
               </li>
               <li>
                 <a href="https://www.amazon.co.uk/" target="_blank">
-                  <img src="img/amazon.png" alt=""></li>
+                  <img src="img/amazon.png" class="hvr-grow" alt=""></li>
                 </a>
             </ul>
           </div>
-
           <audio class="song">
             <source src="audio/last-donut.mp3" preload="auto" >
           </audio>
-
-
         </div>
 
-        <div class="watch-single">
+        <div class="watch-single wow animated fadeIn" data-wow-delay="2s">
           <h3>Watch the video for “Last Donut of the night”</h3>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/fC3Cthm0HFU?rel=0" frameborder="0" allowfullscreen></iframe>
         </div>
+      </div>
 
 
 
-
-
+      <div class="footer">
+        <p>This is a website about J Dilla | Created by <a href="">James Bovis</a></p>
       </div>
 
     </div>
@@ -99,6 +99,11 @@
       }
 
     });
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"> </script>
+    <script>
+      new WOW().init();
     </script>
 
   </body>
