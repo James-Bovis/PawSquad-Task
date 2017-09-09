@@ -33,17 +33,19 @@ transform: translateX(-50%)
 
 .single {
   display: inline-flex;
+  margin: 2em 0em;
 
   .artwork {
     position: relative;
-
-    .record, .play-button {
-      margin: auto;
-      position: absolute;
-      top: 0; left: 0; bottom: 0; right: 0;
-    }
   }
 
+  .record, .play-button {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+  }
+  
   .buy-links {
     margin-left: 2em;
     display: inline-block;
