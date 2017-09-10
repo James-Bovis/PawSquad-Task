@@ -7,9 +7,10 @@ body {
 // Import layout styles
 @import 'layout/sections';
 
+// Imports website components
 @import 'components/components';
 
-// Import base components
+// Import base styles
 @import 'base/typeography';
 @import 'base/helper';
 @import 'base/animation';
