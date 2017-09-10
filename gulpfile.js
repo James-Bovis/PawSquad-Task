@@ -78,6 +78,7 @@ gulp.task('clean:dist', function() {
   return del.sync('dist');
 })
 
+// Runs a build task that readies the files for production
 gulp.task('build', function (callback) {
   runSequence('clean:dist',
     ['copy-index', 'copy-css', 'copy-audio', 'images'],
