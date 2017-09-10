@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <title>J Dilla</title>
+  </head>
+  <body>
+    <div class="intro-section">
+      <div class="container">
+        <div class="header animated fadeIn">
+          <h1>J Dilla</h1>
+          <p>James Dewitt Yancey <br>(February 7, 1974 — February 10, 2006)</p>
+        </div>
+
+        <div class="animated fadeInDown">
+          <h1>"If you were to secretly ask the most praised hip-hop producers, if given a top three, who they fear the most, Dilla’s name would chart on everyone’s list, hands down."</h1>
+          <p>Questlove, drummer from The Roots</p>
+        </div>
+
+        <div class="read-more animated fadeIn">
+          <p class="animated fade ">Scroll down for more</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <div class="container">
+          <img src="img/dilla.jpg" class="img-circle wow animated fadeInUp" data-wow-delay="0.5s" alt="">
+          <p class="wow animated fadeIn" data-wow-delay="1s">"James Dewitt Yancey, better known by the stage names J Dilla and Jay Dee, was an American record producer who emerged from the mid-1990s underground hip-hop scene in Detroit, Michigan. According to his obituary at NPR.org, he "was one of the music industry's most influential hip-hop artists, working for big-name acts including A Tribe Called Quest, De La Soul, Busta Rhymes, The Pharcyde and Common." Yancey died in 2006 of the blood disease Thrombotic thrombocytopenic purpura."</p>
+
+
+        <div class="single wow animated fadeInUp" data-wow-delay="1.5s">
+          <div class="artwork">
+            <img src="img/artwork.jpg" class="cover img-circle" alt="">
+            <img src="img/record.png" class="record" alt="">
+            <img src="img/play.svg" width="50px;" class="play-button hvr-grow" alt="">
+          </div>
+
+          <div class="buy-links">
+            <h4>Buy the single</h4>
+            <ul>
+              <li>
+                <a href="https://www.spotify.com/us/" target="_blank">
+                  <img src="img/spotify.png" class="hvr-grow" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.apple.com/uk/music/" target="_blank">
+                <img src="img/itunes.png" class="hvr-grow" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.amazon.co.uk/" target="_blank">
+                  <img src="img/amazon.png" class="hvr-grow" alt=""></li>
+                </a>
+            </ul>
+          </div>
+          <audio class="song">
+            <source src="audio/last-donut.mp3" preload="auto" >
+          </audio>
+
+
+        </div>
+
+      <div class="watch-single wow animated fadeIn" data-wow-delay="2s">
+          <h3>Watch the video for “Last Donut of the night”</h3>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fC3Cthm0HFU?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="quotes wow animted fadeIn">
+          <div class="quote left">
+            <img src="img/black-thought.jpg " class="img-circle" alt="">
+            <div class="quote-text animated">
+              <p>"I can't begin to explain the influence his mind and ear has had on my band, myself, and the careers of so many other artists. The most humble, modest, worthy and gifted beatmaker I've known...and definitely the best producer on a mic." <span class="author"> - Black Thought</span></p>
+            </div>
+          </div>
+
+          <div class="quote right">
+            <div class="quote-text">
+              <p>"He was one of the greatest, man. He was the greatest to ever do it, for the new cats. And for his mother to tell me that I was his favorite producer – I was like ‘Wow, that’s dope, man.’" <span class="author"> - Pete Rock</span></p>
+            </div>
+              <img src="img/pete-rock.jpg" class="img-circle" alt="">
+
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>This is a website about J Dilla | Created by <a href="">James Bovis</a></p>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+
+    <script>
+    $('.play-button').click(function(){
+      // Toggles spin animation on click
+      $('.record').toggleClass("spin");
+
+      // Controls the play/pause of the song
+      var audio = $(".song")[0];
+      if (audio.paused) {
+          audio.play();
+
+      }  else {
+          audio.pause();
+      }
+
+    });
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"> </script>
+    <script>
+      new WOW().init();
+    </script>
+
+  </body>
+</html>
