@@ -6,7 +6,7 @@ A online version of this task can also be found at http://pawsquad.jamesbovis.co
 ## Getting started
 To clone this repo, run ```git clone https://github.com/James-Bovis/PawSquad-Task.git``` into your terminal.
 
-To download the dependencies, run ```npm install``` into the terminal.
+When the prokect has been downloaded, move into the folder by typing ```cd PawSquad-Task```. Now, once your in the PawSquad-Task folder, type ```npm install``` into the terminal to download the dependencies.
 
 Once finished, typing ```gulp``` will fire up a local web-server, compile the SCSS stylesheets and open up a new browser window serving the files from the ```build``` folder. Any changes that are made to both the ```index.html``` and any of the SCSS files, the browser window will be refreshed automatically.
 
