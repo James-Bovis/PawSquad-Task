@@ -88,6 +88,11 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+    
+    // Fixes squashing images on Safari v.9
+    .quote-text {
+      flex: 1;
+    }
 
     &.left {
       img {
